@@ -31,7 +31,7 @@ cargo run --release             # run all days
 
 ## Run problems using terminal (Only Golang)
 ```sh
-cd golang/day{day}      # run a specific day, e.g cd golang/day01
+cd golang/day{day}      # navigate to a specific day, e.g cd golang/day01
 go run .                # run that specific day
 ```
 
