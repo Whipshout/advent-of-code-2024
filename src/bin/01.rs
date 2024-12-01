@@ -7,8 +7,8 @@ fn main(input: &str) -> (u32, u32) {
 
     input.lines().for_each(|l| {
         let (l, r) = l.split_once("   ").unwrap();
-        left_vector.push(l.parse::<u32>().unwrap());
-        right_vector.push(r.parse::<u32>().unwrap());
+        left_vector.push(l.parse().unwrap());
+        right_vector.push(r.parse().unwrap());
     });
 
     left_vector.sort();
