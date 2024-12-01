@@ -36,10 +36,10 @@ func main() {
 	sort.Ints(left)
 	sort.Ints(right)
 
-	fmt.Printf("Part 1: %v\n", part1(left, right))
-	fmt.Printf("Part 2: %v\n", part2(left, right))
+	fmt.Printf("Part one:\n%v\n", part1(left, right))
+	fmt.Printf("Part two:\n%v\n", part2(left, right))
 
-	fmt.Printf("Execution time: %v\n", time.Since(start))
+	fmt.Printf("Time: %v\n", time.Since(start))
 }
 
 func part1(left, right []int) int {
