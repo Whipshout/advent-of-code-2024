@@ -42,7 +42,7 @@ go run .                # run that specific day
 ## Benchmark (Only Rust)
 The following table contains wall-clock timings of all 25 solutions, as well as the produced answer to both parts. The time includes computing both parts of the problem, using the timing method in [lib.rs](src/lib.rs). It was done on an `Mac Mini M4 Pro 12 cores`.
 
-| Day | Part 1 | Part 2 | Time |
-|:----|:------:|:------:|-----:|
-| 01  |   2066446    |   24931009    |    117μs |
-| 02  |   224    |   293    |    257μs |
+| Day | Part 1 | Part 2 | Time Rust | Time Golang |
+|:----|:------:|:------:|-----:|-----:|
+| 01  |   2066446    |   24931009    |    117μs | 219.833µs |
+| 02  |   224    |   293    |    257μs | 352.708µs |
