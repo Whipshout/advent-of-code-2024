@@ -16,10 +16,10 @@ func main() {
 	data, _ := os.ReadFile("../../inputs/01.txt")
 	lines := strings.Split(string(data), "\n")
 
-	left := []int{}
-	right := []int{}
+	left := make([]int, 1000)
+	right := make([]int, 1000)
 
-	for _, line := range lines {
+	for i, line := range lines {
 		nums := strings.Fields(line)
 
 		if len(nums) != 2 {
@@ -29,8 +29,8 @@ func main() {
 		l, _ := strconv.Atoi(nums[0])
 		r, _ := strconv.Atoi(nums[1])
 
-		left = append(left, l)
-		right = append(right, r)
+		left[i] = l
+		right[i] = r
 	}
 
 	sort.Ints(left)

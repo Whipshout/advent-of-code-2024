@@ -45,3 +45,4 @@ The following table contains wall-clock timings of all 25 solutions, as well as 
 | Day | Part 1 | Part 2 | Time |
 |:----|:------:|:------:|-----:|
 | 01  |   2066446    |   24931009    |    117μs |
+| 02  |   224    |   293    |    257μs |
