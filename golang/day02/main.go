@@ -13,16 +13,12 @@ func main() {
 	start := time.Now()
 
 	data, _ := os.ReadFile("../../inputs/02.txt")
-	lines := strings.Split(string(data), "\n")
+	lines := strings.Split(strings.TrimSpace(string(data)), "\n")
 
 	matrix := make([][]int, 1000)
 
 	for i, line := range lines {
 		rawNumbers := strings.Fields(line)
-
-		if len(rawNumbers) == 0 {
-			continue
-		}
 
 		numbers := make([]int, len(rawNumbers))
 

@@ -14,17 +14,13 @@ func main() {
 	start := time.Now()
 
 	data, _ := os.ReadFile("../../inputs/01.txt")
-	lines := strings.Split(string(data), "\n")
+	lines := strings.Split(strings.TrimSpace(string(data)), "\n")
 
 	left := make([]int, 1000)
 	right := make([]int, 1000)
 
 	for i, line := range lines {
 		nums := strings.Fields(line)
-
-		if len(nums) != 2 {
-			continue
-		}
 
 		l, _ := strconv.Atoi(nums[0])
 		r, _ := strconv.Atoi(nums[1])
