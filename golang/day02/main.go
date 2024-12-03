@@ -87,7 +87,7 @@ func validReportDampened(numbers []int) bool {
 	numbersLen := len(numbers)
 
 	for i := 0; i < numbersLen; i++ {
-		newNumbers := make([]int, 0, numbersLen-1)
+		newNumbers := make([]int, 0, len(numbers)-1)
 		newNumbers = append(newNumbers, numbers[:i]...)
 		newNumbers = append(newNumbers, numbers[i+1:]...)
 
